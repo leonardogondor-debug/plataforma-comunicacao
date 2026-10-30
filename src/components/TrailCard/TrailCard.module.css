@@ -1,0 +1,83 @@
+.trail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.trail-card--locked {
+  background: #fcfbff;
+}
+
+.trail-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.trail-card__tag {
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.trail-card__title {
+  font-size: 1.25rem;
+}
+
+.trail-card__description {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.trail-card__steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.trail-card__step {
+  counter-increment: step;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.trail-card__step::before {
+  content: counter(step);
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.trail-card__step-link {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.trail-card__step-area {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.trail-card__footer {
+  display: flex;
+  justify-content: flex-end;
+}

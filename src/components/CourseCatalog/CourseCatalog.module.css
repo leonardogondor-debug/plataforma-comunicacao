@@ -1,0 +1,13 @@
+.course-catalog {
+  min-width: 0;
+}
+
+.course-catalog__grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.course-catalog__empty {
+  color: var(--color-muted);
+}

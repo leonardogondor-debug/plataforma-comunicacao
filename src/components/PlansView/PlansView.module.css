@@ -1,0 +1,12 @@
+.plans-view {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  padding-top: 0.8rem;
+}
+
+@media (min-width: 900px) {
+  .plans-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

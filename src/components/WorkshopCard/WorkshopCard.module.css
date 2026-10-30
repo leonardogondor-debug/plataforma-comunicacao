@@ -1,0 +1,35 @@
+.workshop-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 1.4rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.workshop-card--locked {
+  background: #fcfbff;
+}
+
+.workshop-card__date {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.workshop-card__title {
+  font-size: 1.2rem;
+}
+
+.workshop-card__description {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+.workshop-card__meta {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}

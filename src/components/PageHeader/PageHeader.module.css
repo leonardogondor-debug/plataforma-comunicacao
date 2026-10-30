@@ -1,0 +1,20 @@
+.page-header {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: #fff;
+  padding: 2.5rem 0;
+}
+
+.page-header__inner {
+  width: min(100% - 2rem, var(--container));
+  margin-inline: auto;
+}
+
+.page-header__title {
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.page-header__subtitle {
+  margin-top: 0.5rem;
+  color: #ece6ff;
+  max-width: 60ch;
+}

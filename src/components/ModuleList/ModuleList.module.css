@@ -1,0 +1,83 @@
+.module-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.module-list__module {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.module-list__summary {
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #fcfbff;
+}
+
+.module-list__module-number {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.module-list__lessons {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.module-list__lesson {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: var(--color-ink);
+}
+
+.module-list__lesson:hover {
+  background: var(--color-primary-soft);
+}
+
+.module-list__lesson--active {
+  background: var(--color-primary-soft);
+  font-weight: 700;
+}
+
+.module-list__status {
+  display: grid;
+  place-items: center;
+  flex: 0 0 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  font-size: 0.75rem;
+}
+
+.module-list__status--done {
+  background: var(--color-success);
+  color: #fff;
+  font-weight: 800;
+}
+
+.module-list__lesson-title {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.module-list__lesson-meta {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}

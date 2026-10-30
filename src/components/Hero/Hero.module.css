@@ -1,0 +1,53 @@
+.hero {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary) 60%, #8b5cf6);
+  color: #fff;
+  padding: 4rem 0 4.5rem;
+}
+
+.hero__inner {
+  width: min(100% - 2rem, var(--container));
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 760px;
+  margin-left: max(1rem, calc((100% - var(--container)) / 2));
+}
+
+.hero__eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.hero__subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #ece6ff;
+  max-width: 60ch;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.hero__ghost-button {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.hero__ghost-button:hover {
+  color: #fff;
+  border-color: #fff;
+}
